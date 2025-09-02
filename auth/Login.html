@@ -1,11 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../index.css" />
     <title>Document</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="login_main_container">
+      <!-- image -->
+      <div class="login-img">
+        <img src="../assets/login-img.svg" alt="login hero image" />
+      </div>
+      <div class="login_container">
+        <div class="content">
+          <div class="heading">
+            <span>Welcome to</span>
+            <span>UnStop</span>
+          </div>
+          <div class="social-btn">
+            <div class="social-inside">
+              <img src="../assets/google.svg" alt="google icon" />
+              <span>Login with Google</span>
+            </div>
+          </div>
+          <div class="social-btn">
+            <div class="social-inside">
+              <img src="../assets/face.svg" alt="facebook icon" />
+              <span>Login with Facebook</span>
+            </div>
+          </div>
+          <div class="midline">
+            <span>OR</span>
+          </div>
+
+          <!-- inputs -->
+          <div class="inputs">
+            <div class="inputdiv">
+              <div class="inside-input">
+                <img src="../assets/profile-icon.svg" alt="" />
+                <div class="input-content">
+                  <label for="username">user name</label>
+                  <input id="username" type="text" />
+                </div>
+              </div>
+            </div>
+            <div class="inputdiv">
+              <div class="inside-input">
+                <img src="../assets/profile-icon.svg" alt="" />
+                <div class="input-content">
+                  <label for="password">password</label>
+                  <input id="password" type="password" />
+                </div>
+              </div>
+            </div>
+            <div class="inputdiv">
+              <div class="inside-input">
+                <img src="../assets/profile-icon.svg" alt="" />
+                <div class="input-content">
+                  <label for="email">email</label>
+                  <input id="email" type="email" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- remember me -->
+          <div class="rememberme">
+            <div class="check">
+              <input type="checkbox" />
+              <span>Remember me</span>
+            </div>
+            <span>Forgot Password?</span>
+          </div>
+
+          <!-- login btn -->
+          <div class="login-btn">
+            <button>Login</button>
+          </div>
+
+          <div class="lasttext">
+            <p>Don’t have an account? <span>Register</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
