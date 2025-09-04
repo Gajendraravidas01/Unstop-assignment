@@ -18,78 +18,82 @@
       <div class="login-img">
         <img src="../assets/login-img.svg" alt="login hero image" />
       </div>
-      <div class="login_container">
-        <div class="content">
-          <div class="heading">
-            <span>Welcome to</span>
-            <span>UnStop</span>
-          </div>
-          <div class="social-btn">
-            <div class="social-inside">
-              <img src="../assets/google.svg" alt="google icon" />
-              <span>Login with Google</span>
+      <form action="">
+        <div class="login_container">
+          <div class="content">
+            <div class="heading">
+              <span>Welcome to</span>
+              <span>UnStop</span>
             </div>
-          </div>
-          <div class="social-btn">
-            <div class="social-inside">
-              <img src="../assets/face.svg" alt="facebook icon" />
-              <span>Login with Facebook</span>
+            <div class="social-btn">
+              <div class="social-inside">
+                <img src="../assets/google.svg" alt="google icon" />
+                <span>Login with Google</span>
+              </div>
             </div>
-          </div>
-          <div class="midline">
-            <span>OR</span>
-          </div>
+            <div class="social-btn">
+              <div class="social-inside">
+                <img src="../assets/face.svg" alt="facebook icon" />
+                <span>Login with Facebook</span>
+              </div>
+            </div>
+            <div class="midline">
+              <span>OR</span>
+            </div>
 
-          <!-- inputs -->
-          <div class="inputs">
-            <div class="inputdiv">
-              <div class="inside-input">
-                <img src="../assets/profile-icon.svg" alt="" />
-                <div class="input-content">
-                  <label for="username">user name</label>
-                  <input id="username" type="text" />
+            <!-- inputs -->
+            <div class="inputs">
+              <div class="inputdiv">
+                <div class="inside-input">
+                  <img src="../assets/profile-icon.svg" alt="" />
+                  <div class="input-content">
+                    <label for="username">user name</label>
+                    <input id="username" type="text" />
+                  </div>
+                </div>
+              </div>
+              <div class="inputdiv">
+                <div class="inside-input">
+                  <img src="../assets/profile-icon.svg" alt="" />
+                  <div class="input-content">
+                    <label for="password">password</label>
+                    <input id="password" type="password" />
+                  </div>
+                </div>
+              </div>
+              <div class="inputdiv">
+                <div class="inside-input">
+                  <img src="../assets/profile-icon.svg" alt="" />
+                  <div class="input-content">
+                    <label for="email">email</label>
+                    <input id="email" type="email" />
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="inputdiv">
-              <div class="inside-input">
-                <img src="../assets/profile-icon.svg" alt="" />
-                <div class="input-content">
-                  <label for="password">password</label>
-                  <input id="password" type="password" />
-                </div>
+
+            <!-- remember me -->
+            <div class="rememberme">
+              <div class="check">
+                <input type="checkbox" id="rememberme"/>
+                <span>Remember me</span>
               </div>
+              <span>Forgot Password?</span>
             </div>
-            <div class="inputdiv">
-              <div class="inside-input">
-                <img src="../assets/profile-icon.svg" alt="" />
-                <div class="input-content">
-                  <label for="email">email</label>
-                  <input id="email" type="email" />
-                </div>
-              </div>
+
+            <!-- login btn -->
+            <div class="login-btn" id="loginbtn">
+              <button >Login</button>
             </div>
-          </div>
 
-          <!-- remember me -->
-          <div class="rememberme">
-            <div class="check">
-              <input type="checkbox" />
-              <span>Remember me</span>
+            <div class="lasttext">
+              <p>Don’t have an account? <span>Register</span></p>
             </div>
-            <span>Forgot Password?</span>
-          </div>
-
-          <!-- login btn -->
-          <div class="login-btn">
-            <button>Login</button>
-          </div>
-
-          <div class="lasttext">
-            <p>Don’t have an account? <span>Register</span></p>
           </div>
         </div>
-      </div>
+      </form>
     </div>
+
+    <script src="../Login.js"></script>
   </body>
 </html>
