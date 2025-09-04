@@ -51,6 +51,7 @@ if (auth) {
   const password = document.getElementById("password");
   const rememberme = document.getElementById("rememberme");
   const loginbtn = document.getElementById("loginbtn");
+  const eyeicon = document.getElementById('eyeicon')
 
   // console.log(form,username,email,password,rememberme,loginbtn)
 
@@ -127,6 +128,16 @@ if (auth) {
 
   form.setAttribute("no-validate", "");
 
+   //eye icon handle
+    eyeicon.addEventListener('click', () => {
+        console.log(password.type);
+        if (password.type === "password") {
+            password.type = "text";   // show password
+        } else {
+            password.type = "password"; // hide password
+        }
+    })
+
   form.addEventListener("submit", async (e) => {
     e.preventDefault();
     clearErrors();
@@ -157,10 +168,10 @@ if (auth) {
       ok = false;
       // console.log('hi i am here')
       showFiledError(password, "Password is required!");
-    } else if (passwordtext.length < 8) {
+    } else if (passwordtext !== 'emilyspass') {
       ok = false;
       console.log("passord", passwordtext);
-      showFiledError(password, "Password must be at least 8 characters.");
+      showFiledError(password, "Password must be 'emilyspass'.");
     }
 
     if (!ok) {

@@ -116,6 +116,11 @@ line-height: 135.5%;
     gap: 10px;
 }
 
+.passdiv{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 .inputdiv{
     display: flex;
     padding: 16px;
@@ -196,12 +201,7 @@ line-height: 135.5%;
     justify-content: center;
     align-items: center;
     gap: 10px;
-    align-self: stretch;
-    border-radius: 16px;
-    background: var(--Primary-Color, #6358DC);
-}
-.login-btn button{
-    color: #FFF;
+      color: #FFF;
     font-family: Poppins;
     font-size: 16px;
     font-style: normal;
@@ -210,6 +210,9 @@ line-height: 135.5%;
     border: none;
     background: none;
     cursor: pointer;
+    align-self: stretch;
+    border-radius: 16px;
+    background: var(--Primary-Color, #6358DC);
 }
 .lasttext{
     margin: auto;
